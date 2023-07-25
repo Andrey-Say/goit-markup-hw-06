@@ -94,6 +94,13 @@
     font-weight: 400;
     line-height: 1.5;
   }
+  .icon-background {
+    display: flex;
+  }
+
+  .work {
+    display: block;
+  }
 
   .team-list {
     gap: 24px;

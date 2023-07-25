@@ -266,7 +266,7 @@ body {
 }
 
 .icon-background {
-  display: flex;
+  display: none;
   height: 112px;
   border-radius: 4px;
   background: var(--cloud);
@@ -279,6 +279,7 @@ body {
 
 .work {
   padding-top: 0;
+  display: none;
 }
 
 .work-title {
