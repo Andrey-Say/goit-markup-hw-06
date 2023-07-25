@@ -44,6 +44,27 @@
   .client-item {
     width: calc((100% - 48px) / 3);
   }
+
+  .footer-block,
+  .footer-social {
+    align-items: flex-start;
+  }
+
+  .subscribe-text {
+    text-align: start;
+  }
+
+  .container-footer {
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .form-footer {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .section {
@@ -92,5 +113,30 @@
   }
   .client-item {
     width: calc((100% - 24px * 5) / 6);
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .container-footer {
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+
+  .footer-block {
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    display: block;
+  }
+  .input-footer,
+  .footer-lable {
+    width: 265px;
+  }
+  .subscribe-box {
+    margin-left: auto;
+    width: auto;
   }
 }
