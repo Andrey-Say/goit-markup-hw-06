@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="nav">
           <a href="index.html" class="logo"
@@ -46,7 +46,9 @@
         <address class="address">
           <ul class="contacts-header list">
             <li class="item">
-              <a class="header-link link" href="mailto:info@devstudio.com"
+              <a
+                class="header-link link header-mail"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
@@ -57,20 +59,89 @@
             </li>
           </ul>
         </address>
+        <button class="buttom-header" type="button">
+          <svg class="icon-header" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        <div class="mob-menu">
+          <button type="mob-button" class="mob-buttom">
+            <svg class="mob-buttom-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mob-list list">
+            <li class="item">
+              <a class="mob-link link color-page current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="item">
+              <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="item">
+              <a class="mob-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <address class="mob-address">
+            <ul class="mob-contacts list">
+              <li class="item">
+                <a class="mob-link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="item">
+                <a class="mob-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon-social list">
+            <li class="mob-icons-list">
+              <a class="mob-icon-link" href="">
+                <svg class="mob-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icons-list">
+              <a class="mob-icon-link" href="">
+                <svg class="mob-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icons-list">
+              <a class="mob-icon-link" href="">
+                <svg class="mob-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icons-list">
+              <a class="mob-icon-link" href="">
+                <svg class="mob-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- hiro -->
 
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- benefits -->
       <section class="benefits section">
@@ -136,6 +207,7 @@
           <ul class="work-list list">
             <li class="item">
               <img
+                srcset="./images/Rectangle.jpg 1x, ./images/Rectangle-2x.jpg 2x"
                 src="./images/Rectangle.jpg"
                 alt="project design"
                 width="360"
@@ -143,6 +215,10 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/dodatok-min.jpg    1x,
+                  ./images/dodatok-min-2x.jpg 2x
+                "
                 src="./images/dodatok-min.jpg"
                 alt="distribution of add-ons for a mobile building"
                 width="360"
@@ -150,6 +226,10 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/telefon-min.jpg    1x,
+                  ./images/telefon-min-2x.jpg 2x
+                "
                 src="./images/telefon-min.jpg"
                 alt="site creation"
                 width="360"
@@ -166,6 +246,7 @@
           <ul class="team-list list">
             <li class="item">
               <img
+                srcset="./images/mark-min.jpg 1x, ./images/mark-min-2x.jpg 2x"
                 src="./images/mark-min.jpg"
                 alt="Product Designer"
                 width="264"
@@ -208,6 +289,7 @@
             </li>
             <li class="item">
               <img
+                srcset="./images/tom-min.jpg 1x, ./images/tom-min-2x.jpg 2x"
                 src="./images/tom-min.jpg"
                 alt="Frontend Developer"
                 width="264"
@@ -248,7 +330,15 @@
               </div>
             </li>
             <li class="item">
-              <img src="./images/camila-min.jpg" alt="Marketing" width="264" />
+              <img
+                srcset="
+                  ./images/camila-min.jpg    1x,
+                  ./images/camila-min-2x.jpg 2x
+                "
+                src="./images/camila-min.jpg"
+                alt="Marketing"
+                width="264"
+              />
               <div class="container-text">
                 <h3 class="text-name">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -286,6 +376,10 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/daniel-min.jpg    1x,
+                  ./images/daniel-min-2x.jpg 2x
+                "
                 src="./images/daniel-min.jpg"
                 alt="UI Designer"
                 width="264"
