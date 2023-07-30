@@ -26,6 +26,10 @@
   .header-mail {
     margin-bottom: 12px;
   }
+  .buttom-header,
+  .mob-menu {
+    display: none;
+  }
 
   .hero {
     background-image: linear-gradient(
@@ -125,6 +129,11 @@
   .nav-list,
   .contacts-header {
     display: flex;
+  }
+
+  .buttom-header,
+  .mob-menu {
+    display: none;
   }
 
   .hero {
