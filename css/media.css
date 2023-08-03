@@ -21,6 +21,9 @@
 
   .header-link {
     padding: 0;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
   }
 
   .header-mail {
@@ -30,6 +33,9 @@
   .mob-menu {
     display: none;
   }
+  .logo {
+    margin-right: 120px;
+  }
 
   .hero {
     background-image: linear-gradient(
@@ -37,6 +43,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-tab.jpg);
+    max-width: 768px;
   }
 
   @media (min-devise-pixel-ratio: 2),
@@ -54,6 +61,7 @@
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
+    max-width: 496px;
   }
 
   .benefits-list {
@@ -84,6 +92,10 @@
   .team-list .item {
     width: calc((100% - 24px) / 2);
   }
+
+  .container-tab {
+    max-width: 584px;
+  }
   .clients-list {
     column-gap: 24px;
     row-gap: 72px;
@@ -107,10 +119,14 @@
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
+    max-width: 584px;
   }
   .form-footer {
     flex-direction: row;
     gap: 24px;
+  }
+  .footer-lable {
+    width: 264px;
   }
 }
 
@@ -118,8 +134,7 @@
 
 @media screen and (min-width: 1158px) {
   .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 15px;
   }
 
   .container {
@@ -134,6 +149,12 @@
   .buttom-header,
   .mob-menu {
     display: none;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+  .header-mail {
+    margin: 0;
   }
 
   .hero {
@@ -190,6 +211,7 @@
 
   .work {
     display: block;
+    padding-top: 0;
   }
 
   .team-list {
@@ -202,8 +224,7 @@
   }
 
   .team-container {
-    width: 100%;
-    padding: 0;
+    padding: 0 16px;
   }
   .clients-list {
     gap: 24px;

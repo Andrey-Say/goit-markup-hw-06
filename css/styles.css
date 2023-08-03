@@ -113,6 +113,7 @@ body {
   padding: 80px 0 40px 40px;
 
   background-color: var(--white);
+  overflow-y: scroll;
 }
 .mob-buttom {
   position: absolute;
@@ -167,6 +168,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+  font-style: normal;
   color: var(--slate);
 }
 
@@ -174,9 +176,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 56px;
 }
+@media screen and (max-width: 370px) {
+  .mob-link-tel {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.33;
+  }
+  .mob-icon-social {
+    gap: 30px;
+  }
+}
+
 .mob-icon-link {
   display: flex;
   width: 40px;
@@ -250,8 +263,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 24px 0 24px 0;
-
-  margin-right: 76px;
 }
 
 .accent {
@@ -289,9 +300,10 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  max-width: 428px;
 }
 
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hiro {
@@ -312,7 +324,7 @@ body {
   text-align: center;
   color: var(--white);
 
-  max-width: 496px;
+  max-width: 320px;
   margin: 0 auto 48px auto;
 }
 
