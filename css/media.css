@@ -230,9 +230,6 @@
     width: calc((100% - 72px) / 4);
   }
 
-  .team-container {
-    padding: 0 16px;
-  }
   .clients-list {
     gap: 24px;
   }
